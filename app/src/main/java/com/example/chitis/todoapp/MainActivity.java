@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, EditItemActivity.class);
                 // pass the data being edited
                 i.putExtra(ITEM_TEXT, items.get(position));
+                i.putExtra(ITEM_POSITION, position);
                 // display the activity
                 startActivityForResult(i,EDIT_REQUEST_CODE);
             }
